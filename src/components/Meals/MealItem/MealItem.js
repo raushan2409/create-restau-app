@@ -1,3 +1,4 @@
+import MealItemForm from './MealItemForm';
 import classes from './MealItem.module.css'
 
 //receives some props
@@ -14,7 +15,7 @@ const MealItem = (props) => {
 
       <div>
         {/* i wonna render the simple form which allows user to user to enter the amount , the amount of meal that wonna add to the cart and then add to cart button  mealitemform.js file for that component */}
-
+<MealItemForm />
       </div>
     </li>
   );
