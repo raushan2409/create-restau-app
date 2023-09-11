@@ -8,12 +8,11 @@ const Header = (props) => {
     <Fragment>
       <header className={classes.header}>
         <h1>ReactMeals</h1>
-        {/* <button>Cart</button> */}
-        <HeaderCartButton />
+        {/* onclick is custom u can use any of the name,which looks like the builtin onclick  */}
+        <HeaderCartButton onClick={props.onShowCart}/>
       </header>
       <div className={classes["main-image"]}>
         <img src={mealsImage} alt="A table full of delicious food!" />
-        {/* u can also add some url */}
       </div>
     </Fragment>
   );

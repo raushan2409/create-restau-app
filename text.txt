@@ -1,0 +1,22 @@
+course project: the food order app , applying what we learned
+layout:for header component
+assets for the image
+don't forget to update index.js
+first we created meals,ui,asset, cart and layout folder then we added header.js and header.module.css folder to implement our header image or ui, then for cart functionand pic we added headercartbutton.js , headercartbutton.css for cart
+and then add carticon.js in our cart folder from github
+we replace button in header.js matlab headercartbutton ko header.js me export kr die(headercartbutton in header.js file)
+1 se 4 tk completed
+
+meals-> meals.js for summary than mealsSummary.js and then availablemeals.ns component that is responsible for bringing the actual list of meals
+
+created card.js and card.module.css in ui and expoort in availablemeals.js and wrap our unordered list with card
+
+now the meals items don't have the final look i wonna have and therefore i'll add new subfolders mealitems inside meals
+in mealitem folder i will add mealItem.js file
+now add mealitem.css and then add some input and button tag in mealitemform.js and after that create input.js in ui subfolders
+
+add cart.js in cart folder ordering won't really be a thing  and then attach card.module.css file 
+so let's add modal in ui folder modal.js add styling file modal.module.css in ui folder
+    
+to render modal u have to go on public folder in index.html and on the above div id root <div id="overlays">here i portal my modal and backdrop</div>
+so how can we now ensure that the cartis only showing up when ur cart button is clickedand can be removed if we clicked on the backdrop or the close btn, well we have to manage some state because we've different state now one state where the cart is visible and one state where it's not visible these are two states and whenever we have more then one state u need to manage these state with reactand in function component we have to use use state for that in appjs because we have render the cart in app.js
